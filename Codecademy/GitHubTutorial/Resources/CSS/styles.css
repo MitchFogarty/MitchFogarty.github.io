@@ -1,0 +1,115 @@
+*{
+    font-family: Nunito, sans-serif;
+  }
+  
+  body {
+    background-color: #dbdbfa;
+  }
+  
+  section{
+    margin-bottom: 44px;
+  }
+  
+  article {
+      background-color: #f3f3f2;
+      margin-bottom: 1em;
+      width: 65%;
+      margin: 0 auto;
+  }
+  
+  article p{
+    margin: 8px;
+    text-align: center;
+  }
+  
+  article .heading{
+    margin: 0;
+  }
+
+  header {
+    width: 65%;
+    margin: 0 auto 36px auto;
+  }
+  
+  .heading {
+    font-family: Roboto, sans-serif;
+    background-color: violet;
+    padding: 4px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .bold{
+    font-weight: 700;
+  }
+  
+  table{
+    border: 2px solid darkorchid;
+    border-collapse: collapse;
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  tr {
+    border-bottom: 2px solid darkorchid;
+  }
+  
+  th,
+  td {
+    border-right: 2px solid darkorchid;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tbody tr:hover{
+    background-color: #f3f3f2;
+  }
+  
+  thead {
+    background-color: violet;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .example {
+    text-align: left;
+  }
+
+  /** CSS Tricks HTML specific CSS **/
+  .arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-bottom: 5px solid black;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #f00;
+  }
+  
+  .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid green;
+  }
+  
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid blue; 
+  }

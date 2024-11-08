@@ -1,0 +1,200 @@
+/* Universal styles */
+body {
+    font-family: 'Helvetica', serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    margin-left: 20px;
+}
+
+/* Header styles */
+header {
+    padding: 10px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 50px;
+}
+
+/* Nav */
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li:nth-child(1),
+header ul li:nth-child(2) {
+    margin-right: 25px;
+}
+
+header ul li a {
+    color: seashell;
+    text-decoration: underline;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+}
+
+/* Body content styles */
+
+.body-section {
+    padding-top: 79px; /* Add padding to the top of the main content to avoid overlap with the fixed header */
+}
+
+.container {
+    margin: 0 auto 30px auto;
+    box-sizing: border-box;
+}
+
+
+/* hero section */
+.hero-section {
+    height: 700px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#hero-headings {
+    background-color: black;
+    width: 100%;
+}
+
+#hero-headings h2,
+#hero-headings h4 {
+    margin: 15px 0;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Tea of Month */
+.content-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#tea_of_month {
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+#tea_of_month h2,
+#tea_of_month h4 {
+    text-align: center;
+}
+
+.tile {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+    height: 200px;
+    margin: 45px 10px;
+}
+
+.tile img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.tile h4 {
+    margin: 0;
+}
+
+/* locations styles */
+
+.locations-section {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Stack the heading and cards vertically */
+    align-items: center; /* Center the content horizontally */
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.locations-section img {
+    width: 100%; /* Ensure the image fills the width of the container */
+    height: 100%; /* Ensure the image fills the height of the container */
+    position: absolute; /* Position the image absolutely to allow content to overlay it */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image is behind the text and cards */
+}
+
+.locations-section h2 {
+    margin: 115px 0 15px;
+    z-index: 1; /* Ensure the heading is above the image */
+    color: seashell; /* Ensure the text is readable */
+}
+
+.card-content {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: flex-start; /* Align cards to the start of the section */
+    gap: 40px; /* Space the cards 40px apart */
+    z-index: 1; /* Ensure the cards are above the image */
+    flex-wrap: wrap; /* Allow cards to wrap if necessary */
+    margin-top: 15px; /* Space below the heading */
+}
+
+.card {
+    width: 300px;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    color: seashell;
+    text-align: center;
+    z-index: 1;
+}
+
+.card p {
+    opacity: 1;
+}
+
+/* Footer styles */
+
+.footer-container {
+    height: 200px;
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
