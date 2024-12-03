@@ -26,6 +26,7 @@ body{
     text-align: center;
     position: relative;
     padding-top: 3.5rem;
+    background-size: cover;
 }
 
 .heading {
