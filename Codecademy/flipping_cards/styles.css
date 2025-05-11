@@ -1,0 +1,127 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: stretch; /* Stretch sections to full width */
+  justify-content: flex-start; /* Align content to the top */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+/* Header, click-flip, hover-flip, and footer styles */
+header,
+.click-flip,
+.hover-flip,
+footer {
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  padding: 20px 0; /* Add vertical padding */
+}
+
+/* Footer-specific styles */
+footer {
+  background: #222; /* Darker background for footer */
+  color: #fff;
+  text-align: center;
+}
+
+/* click and hover h2 styles */
+.click-flip h2,
+.hover-flip h2 {
+  font-size: 2rem;
+  margin-bottom: 20px; /* Space between heading and cards */
+  width: 100%;
+  text-align: center;
+}
+
+/* Card container styles */
+.click-flip .card-container,
+.hover-flip .card-container {
+  width: 200px;
+  height: 325px;
+  margin: 30px;
+  display: flex;
+}
+
+/* Hover flip functionality */
+.hover-flip .card-container:hover > .card_hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+/* Card styles */
+.card,
+.card_hover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 500ms;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 4px rgba(255, 165, 0, 0.5);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: #3a3a3a;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back p {
+  text-align: center;
+}
+
+.back h2,
+.back p {
+  margin-bottom: 2rem; /* Adjust spacing between elements */
+}
+
+.back p:last-child {
+  margin-bottom: 0; /* Remove margin from the last element */
+}
+
+/* Color styles for card fronts */
+.orange {
+  background-image: radial-gradient(orange, orangered, black);
+}
+
+.purple {
+  background-image: radial-gradient(violet, darkviolet, black);
+}
+
+.green {
+  background-image: radial-gradient(greenyellow, forestgreen, black);
+}
+
+.blue {
+  background-image: radial-gradient(deepskyblue, darkblue, black);
+}
+
+/* Flipped card styles */
+.card.flipped {
+  transform: rotateY(180deg);
+}
