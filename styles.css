@@ -1,6 +1,111 @@
 body {
-    background-color: #C77DFF;
-    margin: 0;
-    padding:0;
-    font-family: 'Arial', sans-serif;
+  background: #C77DFF;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0; /* Remove default margin */
+  display: flex; /* MUST be established before overflow and position */
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Ensure body fills the viewport */
+  overflow: hidden; /* Prevent scrolling */
+  position: relative;
 }
+
+#navigation {
+    background-color: #FFC77D;
+    color: #7DFFC7;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;/* Positioning for the navigation */
+}
+
+.col12-grid-container {
+  height: 100vh; /* Use half the screen height */
+  width: 100%; /* Full width */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 20px;
+  padding: 100px 2rem;
+  box-sizing: border-box;
+  position: absolute ;
+}
+
+.grid-container-rows {
+  height: 100vh; /* Use the other half of the screen height */
+  width: 100%; /* Full width */
+  display: grid;
+  grid-template-rows: repeat(11, 100px); /* Adjust rows to fit evenly */
+  grid-gap: 10px 0;
+  padding: 100px 2rem;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.col12-column,
+.row {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black for grid items */
+  color: white;
+  height: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Styling for desktops and monitors */
+@media only screen and (min-width: 1200px){
+    #navigation {
+        height: 100px;
+        /*setting the parent display to flex will allow child containers to be manipulated*/
+        display: flex;
+        box-sizing: border-box;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* Unique CSS styles for everything under MAIN NAV*/
+    #main-nav {
+        /*This will set the three elements in main nav into a 3 column row*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #brand{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        display:flex;
+        align-content: flex-start; /*Added to each of the three child elements inside .main-nav. It moves them into the same line block.*/
+    }
+
+    .nav-links {
+        list-style-type: none; /* Remove default list styling */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        height: 100%;
+    }
+
+    .nav-links li {
+      height: 100%;
+      display: inline-block;
+      margin: auto;
+    }
+
+    .nav-links a{
+      color: #7DFFC7;
+      font-weight: 600;
+      font-size: 1.75rem;
+      text-decoration: none;
+      padding: 0 20px;
+      text-align: center;
+    }
+    
+    #navigation .nav-links a:hover {
+        color: #FFC77D;
+        background: #7DFFC7; 
+        cursor: pointer;
+    }
+  }

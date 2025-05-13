@@ -8,23 +8,65 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <header>
-        <h1>Welcome</h1>
-    </header>
-    <main>
-        <div id="nav">
-            <ul>
-                <li><a href="Codecademy/flipping_cards/index.html">Flipping Cards</a></li>
-                <li><a href="Codecademy/Crocature/index.html">Crocature Project</a></li>
-                <li><a href="Codecademy/fotomatic_brocken/index.html">Fotomatic Project</a></li>
-                <li><a href="Codecademy/JamClub/index.html">Jam Club Project</a></li>
-                <li><a href="Codecademy/TeaCosyProject/index.html">Tea Cosy Project</a></li>
+     <header id="navigation">
+        <div id="main-nav">
+            <div id="brand">
+                <img src="Resources/Portfolio_Logo.png" alt="Logo" class="logo" style="width:100px;height:100px;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+     </header>
+
+     <div id="grid"></div>
+        <div class="col12-grid-container">
+            <div class="col12-column">1</div>
+            <div class="col12-column">2</div>
+            <div class="col12-column">3</div>
+            <div class="col12-column">4</div>
+            <div class="col12-column">5</div>
+            <div class="col12-column">6</div>
+            <div class="col12-column">7</div>
+            <div class="col12-column">8</div>
+            <div class="col12-column">9</div>
+            <div class="col12-column">10</div>
+            <div class="col12-column">11</div>
+            <div class="col12-column">12</div>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Mitchell Fogarty. All rights reserved.</p>
-    </footer>
+        <div class="grid-container-rows">
+            <div class="row">1</div>
+            <div class="row">2</div>
+            <div class="row">3</div>
+            <div class="row">4</div>
+            <div class="row">5</div>
+            <div class="row">6</div>
+            <div class="row">7</div>
+            <div class="row">8</div>
+            <div class="row">9</div>
+            <div class="row">10</div>
+            <div class="row">11</div>
+            <div class="row">12</div>
+        </div>
+    </div>
+    
+    <div id="content">
+        <main>
+            <h1>Welcome</h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="Codecademy/flipping_cards/index.html">Flipping Cards</a></li>
+                    <li><a href="Codecademy/Crocature/index.html">Crocature Project</a></li>
+                    <li><a href="Codecademy/TeaCosyProject/index.html">Tea Cosy Project</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Mitchell Fogarty. All rights reserved.</p>
+        </footer>
+    </div>
+    
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

@@ -1,0 +1,42 @@
+body {
+  background: skyblue;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Ensure body fills the viewport */
+  overflow: hidden; /* Prevent scrolling */
+  position: relative;
+}
+
+.col12-grid-container {
+  height: 100vh; /* Use half the screen height */
+  width: 100%; /* Full width */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 20px;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  position: absolute; /* Stack with .grid-container-row */
+}
+
+.grid-container-rows {
+  height: 100vh; /* Use the other half of the screen height */
+  width: 100%; /* Full width */
+  display: grid;
+  grid-template-rows: repeat(11, 100px); /* Adjust rows to fit evenly */
+  grid-gap: 10px 0;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  position: absolute; /* Stack with .col12-grid-container */
+}
+
+.col12-column,
+.row {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black for grid items */
+  color: white;
+  height: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
