@@ -1,0 +1,18 @@
+body {
+  background: #FF867D; /* primary colour */
+  color: #fff;
+}
+
+#navigation {
+  background-color: #867DFF; /* tertiary colour */
+  color: #7DFF86; /* secondary colour */
+}
+
+.nav-links a{
+  color: #7DFF86; /* secondary colour */
+}
+    
+#navigation .nav-links a:hover {
+  color: #867DFF; /* tertiary colour */
+  background: #7DFF86; /* secondary colour */
+}

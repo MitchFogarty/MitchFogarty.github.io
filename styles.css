@@ -1,25 +1,22 @@
 body {
-  background: #C77DFF;
+  background: #C77DFF; /* primary colour*/
   color: #fff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvatica', sans-serif;
   margin: 0; /* Remove default margin */
   display: flex; /* MUST be established before overflow and position */
   flex-direction: column;
   align-items: center;
   height: 100vh; /* Ensure body fills the viewport */
-  overflow: hidden; /* Prevent scrolling */
-  position: relative;
 }
 
 #navigation {
-    background-color: #FFC77D;
-    color: #7DFFC7;
-    width: 100%;
-    margin: 0;
-    position: relative;
-    z-index: 1;/* Positioning for the navigation */
+  background-color: #FFC77D; /* tertiary colour */
+  color: #7DFFC7; /* secondary colour */
+  width: 100%;
+  margin: 0;
+  position: relative;
+  z-index: 1;/* Positioning for the navigation */
 }
-
 .col12-grid-container {
   height: 100vh; /* Use half the screen height */
   width: 100%; /* Full width */
@@ -55,57 +52,65 @@ body {
 
 /* Styling for desktops and monitors */
 @media only screen and (min-width: 1200px){
-    #navigation {
-        height: 100px;
-        /*setting the parent display to flex will allow child containers to be manipulated*/
-        display: flex;
-        box-sizing: border-box;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+   #navigation {
+    height: 64px;
+    /*setting the parent display to flex will allow child containers to be manipulated*/
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 2rem;
+  }
 
-    /* Unique CSS styles for everything under MAIN NAV*/
-    #main-nav {
-        /*This will set the three elements in main nav into a 3 column row*/
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+  /* Unique CSS styles for everything under MAIN NAV*/
+  #main-nav {
+    /*This will set the three elements in main nav into a 3 column row*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-    #brand{
-        width: 100px;
-        height: 100px;
-        margin: 0;
-        display:flex;
-        align-content: flex-start; /*Added to each of the three child elements inside .main-nav. It moves them into the same line block.*/
-    }
+  #brand{
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    display:flex;
+    align-content: flex-start;
+  }
 
-    .nav-links {
-        list-style-type: none; /* Remove default list styling */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        height: 100%;
-    }
+  #brand img {
+    width: 64px;
+    height: 64px;
+  }
 
-    .nav-links li {
-      height: 100%;
-      display: inline-block;
-      margin: auto;
-    }
+  .nav-links {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%;
+    display: flex;
+  }
 
-    .nav-links a{
-      color: #7DFFC7;
-      font-weight: 600;
-      font-size: 1.75rem;
-      text-decoration: none;
-      padding: 0 20px;
-      text-align: center;
-    }
-    
-    #navigation .nav-links a:hover {
-        color: #FFC77D;
-        background: #7DFFC7; 
-        cursor: pointer;
-    }
+  .nav-links li {
+    height: 100%;
+  }
+
+  .nav-links a{
+    color: #7DFFC7; /* secondary colour */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+  }
+      
+  #navigation .nav-links a:hover {
+    color: #7DFFC7; /* secondary colour */
+    background: #C77DFF; /* primary colour */
+    cursor: pointer;
+    /* border-top: 5px solid #FFC77D;  tertiary colour */
+    border-bottom: 10px solid #7DFFC7; /* secondary colour */
+    box-sizing: border-box;
+  }
   }
