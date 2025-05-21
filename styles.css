@@ -1,38 +1,51 @@
 body {
-  background: #C77DFF; /* primary colour*/
+  background: #C77DFF;
+  /* primary colour*/
   color: #fff;
   font-family: 'Helvatica', sans-serif;
-  margin: 0; /* Remove default margin */
-  display: flex; /* MUST be established before overflow and position */
+  margin: 0;
+  /* Remove default margin */
+  display: flex;
+  /* MUST be established before overflow and position */
   flex-direction: column;
   align-items: center;
-  height: 100vh; /* Ensure body fills the viewport */
+  height: 100vh;
+  /* Ensure body fills the viewport */
 }
 
 #navigation {
-  background-color: #FFC77D; /* tertiary colour */
-  color: #7DFFC7; /* secondary colour */
+  background-color: #FFC77D;
+  /* tertiary colour */
+  color: #7DFFC7;
+  /* secondary colour */
   width: 100%;
   margin: 0;
   position: relative;
-  z-index: 1;/* Positioning for the navigation */
+  z-index: 1;
+  /* Positioning for the navigation */
 }
+
 .col12-grid-container {
-  height: 100vh; /* Use half the screen height */
-  width: 100%; /* Full width */
+  height: 100vh;
+  /* Use half the screen height */
+  width: 100%;
+  /* Full width */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0 20px;
   padding: 100px 2rem;
   box-sizing: border-box;
-  position: absolute ;
+  position: absolute;
 }
 
 .grid-container-rows {
-  height: 100vh; /* Use the other half of the screen height */
-  width: 100%; /* Full width */
+  height: 100vh;
+  /* Use the other half of the screen height */
+  width: 100%;
+  /* Full width */
   display: grid;
-  grid-template-rows: repeat(11, 100px); /* Adjust rows to fit evenly */
+  grid-template-rows: repeat(11, 100px);
+  /* Adjust rows to fit evenly */
   grid-gap: 10px 0;
   padding: 100px 2rem;
   box-sizing: border-box;
@@ -41,7 +54,8 @@ body {
 
 .col12-column,
 .row {
-  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black for grid items */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Semi-transparent black for grid items */
   color: white;
   height: 100%;
   border-radius: 5px;
@@ -51,8 +65,8 @@ body {
 }
 
 /* Styling for desktops and monitors */
-@media only screen and (min-width: 1200px){
-   #navigation {
+@media only screen and (min-width: 1200px) {
+  #navigation {
     height: 64px;
     /*setting the parent display to flex will allow child containers to be manipulated*/
     display: flex;
@@ -69,11 +83,11 @@ body {
     width: 100%;
   }
 
-  #brand{
+  #brand {
     width: 64px;
     height: 64px;
     margin: 0;
-    display:flex;
+    display: flex;
     align-content: flex-start;
   }
 
@@ -83,9 +97,12 @@ body {
   }
 
   .nav-links {
-    list-style-type: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    /* Remove default list styling */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
     height: 100%;
     display: flex;
   }
@@ -94,8 +111,9 @@ body {
     height: 100%;
   }
 
-  .nav-links a{
-    color: #7DFFC7; /* secondary colour */
+  .nav-links a {
+    color: #7DFFC7;
+    /* secondary colour */
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -104,13 +122,54 @@ body {
     padding: 0 20px;
     height: 100%;
   }
-      
+
   #navigation .nav-links a:hover {
-    color: #7DFFC7; /* secondary colour */
-    background: #C77DFF; /* primary colour */
+    color: #7DFFC7;
+    /* secondary colour */
+    background: #C77DFF;
+    /* primary colour */
     cursor: pointer;
     /* border-top: 5px solid #FFC77D;  tertiary colour */
-    border-bottom: 10px solid #7DFFC7; /* secondary colour */
+    border-bottom: 10px solid #7DFFC7;
+    /* secondary colour */
     box-sizing: border-box;
   }
+
+  #hero-section {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
   }
+
+  .grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .welcome-content,
+  .images {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .polaroid{
+    width: 30%;
+    height: 30%;
+  }
+}
