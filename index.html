@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <div id="grid"></div>
+    <!--<div id="grid"></div>
         <div class="col12-grid-container">
             <div class="col12-column">1</div>
             <div class="col12-column">2</div>
@@ -58,44 +58,49 @@
             <div class="row">11</div>
             <div class="row">12</div>
         </div>
-    </div>
+    </div>-->
     
     <div id="hero-section">
         <div class="grid">
             <div class="welcome-content">
-                <h1>Welcome to my Portfolio</h1>
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
                 <p>Hi! I'm Mitch Fogarty.</p>
                 <p>Aspiring Fullstack Developer and UX/UI Designer, CyberSecurity Amateur, Drummer, Dad, Avid Adventurer, coffee connoisseur and espresso martini fanatic.</p>
             </div>
-            <div class="images">
-                <img src="Resources/Polaroids/1.png" alt="Polaroid 1" class="polaroid">
-                <img src="Resources/Polaroids/2.png" alt="Polaroid 2" class="polaroid">
-                <img src="Resources/Polaroids/3.png" alt="Polaroid 3" class="polaroid">
-                <img src="Resources/Polaroids/4.png" alt="Polaroid 4" class="polaroid">
-                <img src="Resources/Polaroids/5.png" alt="Polaroid 5" class="polaroid">
-                <img src="Resources/Polaroids/6.png" alt="Polaroid 6" class="polaroid">
-                <img src="Resources/Polaroids/7.png" alt="Polaroid 7" class="polaroid">
-                <img src="Resources/Polaroids/8.png" alt="Polaroid 8" class="polaroid">
-                <img src="Resources/Polaroids/9.png" alt="Polaroid 9" class="polaroid">
-                <img src="Resources/Polaroids/10.png" alt="Polaroid 10" class="polaroid">   
-                <img src="Resources/Polaroids/11.png" alt="Polaroid 11" class="polaroid">
-                <img src="Resources/Polaroids/12.png" alt="Polaroid 12" class="polaroid">
-                <img src="Resources/Polaroids/13.png" alt="Polaroid 13" class="polaroid">
-                <img src="Resources/Polaroids/14.png" alt="Polaroid 14" class="polaroid">
-                <img src="Resources/Polaroids/15.png" alt="Polaroid 15" class="polaroid">
-                <img src="Resources/Polaroids/16.png" alt="Polaroid 16" class="polaroid">
-                <img src="Resources/Polaroids/17.png" alt="Polaroid 17" class="polaroid">
-                <img src="Resources/Polaroids/18.png" alt="Polaroid 18" class="polaroid">
-                <img src="Resources/Polaroids/19.png" alt="Polaroid 19" class="polaroid">
-                <img src="Resources/Polaroids/20.png" alt="Polaroid 20" class="polaroid">
-                <img src="Resources/Polaroids/21.png" alt="Polaroid 21" class="polaroid">
-                <img src="Resources/Polaroids/22.png" alt="Polaroid 22" class="polaroid">
-                <img src="Resources/Polaroids/23.png" alt="Polaroid 23" class="polaroid">
-                <img src="Resources/Polaroids/24.png" alt="Polaroid 24" class="polaroid">
-                <img src="Resources/Polaroids/25.png" alt="Polaroid 25" class="polaroid">
-                <img src="Resources/Polaroids/26.png" alt="Polaroid 26" class="polaroid">
-                <img src="Resources/Polaroids/27.png" alt="Polaroid 27" class="polaroid">
-                <img src="Resources/Polaroids/28.png" alt="Polaroid 28" class="polaroid">
+            <div class="carousel-container">
+                <div class="hero">
+                    <div class="carousel">
+                        <!-- Images added dynamically via JavaScript
+                        <div class="carousel__image"><img src="Resources/Polaroids/1.png" alt="Project 1"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/2.png" alt="Project 2"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/3.png" alt="Project 3"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/4.png" alt="Project 4"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/5.png" alt="Project 5"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/6.png" alt="Project 6"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/7.png" alt="Project 7"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/8.png" alt="Project 8"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/9.png" alt="Project 9"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/10.png" alt="Project 10"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/11.png" alt="Project 11"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/12.png" alt="Project 12"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/13.png" alt="Project 13"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/14.png" alt="Project 14"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/15.png" alt="Project 15"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/16.png" alt="Project 16"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/17.png" alt="Project 17"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/18.png" alt="Project 18"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/19.png" alt="Project 19"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/20.png" alt="Project 20"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/21.png" alt="Project 21"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/22.png" alt="Project 22"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/23.png" alt="Project 23"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/24.png" alt="Project 24"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/25.png" alt="Project 25"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/26.png" alt="Project 26"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/27.png" alt="Project 27"></div>
+                        <div class="carousel__image"><img src="Resources/Polaroids/28.png" alt="Project 28"></div>-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -104,6 +109,79 @@
         <p>&copy; 2025 Mitchell Fogarty. All rights reserved.</p>
     </footer>
     
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+        // Select the carousel container
+        const carousel = document.querySelector('.carousel');
+
+        // Number of images (1.png to 28.png)
+        const total = 28;
+        const angle = 360 / total;
+
+        // Dynamically create and insert images
+        for (let i = 1; i <= total; i++) {
+        const imgWrapper = document.createElement('div');
+        imgWrapper.classList.add('carousel__image');
+
+        const img = document.createElement('img');
+        img.src = `Resources/Polaroids/${i}.png`;
+        img.alt = `Image ${i}`;
+
+        imgWrapper.appendChild(img);
+
+        // Rotate and translate each image to place in a 3D circle
+        const rotation = i * angle;
+        imgWrapper.style.transform = `rotateY(${rotation}deg) translateZ(700px)`;
+
+        carousel.appendChild(imgWrapper);
+        
+        // function([string1, string2],target id,[color1,color2])    
+        consoleText(['Welcome to my Portfolio.'], 'text',['#7DFFC7']);
+
+        function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ['#fff'];
+        var visible = true;
+        var con = document.getElementById('console');
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id)
+        target.setAttribute('style', 'color:' + colors[0])
+        // Store interval IDs so we can clear them
+        let typingInterval, blinkInterval;
+
+        typingInterval = window.setInterval(function() {
+            if (letterCount === 0 && waiting === false) {
+                waiting = true;
+                target.innerHTML = words[0].substring(0, letterCount);
+                window.setTimeout(function() {
+                    x = 1;
+                    target.setAttribute('style', 'color:' + colors[0]);
+                    letterCount += x;
+                    waiting = false;
+                }, 1000);
+            } else if (waiting === false) {
+                target.innerHTML = words[0].substring(0, letterCount);
+                letterCount += x;
+                // When finished typing, stop blinking and hide underscore
+                if (letterCount > words[0].length) {
+                    clearInterval(typingInterval);
+                    clearInterval(blinkInterval);
+                    con.className = 'console-underscore hidden'; // Hide underscore
+                }
+            }
+        }, 120);
+
+        blinkInterval = window.setInterval(function() {
+            if (visible === true) {
+                con.className = 'console-underscore hidden';
+                visible = false;
+            } else {
+                con.className = 'console-underscore';
+                visible = true;
+            }
+        }, 400);
+        }
+        }
+    </script> <!-- Link to your JavaScript file -->
 </body>
 </html>

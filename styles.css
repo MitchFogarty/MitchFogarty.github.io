@@ -156,20 +156,87 @@ body {
   }
 
   .welcome-content,
-  .images {
+  .carousel-container {
     width: 100%;
     height: 100%;
-    background: #000;
-    opacity: 0.6;
+    /*background: #000;
+    opacity: 0.6;*/
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .console-container {
+    font-size:6rem;
+    height:auto;
+    width:100%;
+    color:white;
+  }
 
-  .polaroid{
-    width: 30%;
-    height: 30%;
+  .console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+  }
+
+  #text {
+    font-family: 'Helvetica', sans-serif;
+    text-shadow:rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .welcome-content p {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 1rem;
+    text-shadow:rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  }
+
+  /* Hero section to contain the carousel */
+  .hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* Enables 3D effect */
+    overflow: hidden; /* Hides overflow from rotating images */
+  }
+
+  /* Carousel container */
+  .carousel {
+    position: relative;
+    width: 150px; 
+    height: 150px; 
+    transform-style: preserve-3d; /* Allows children to be placed in 3D space */
+    animation: rotate 240s linear infinite reverse; /* Controls rotation; reverse = counterclockwise */
+  }
+
+  /* Each image "card" */
+  .carousel__image {
+    position: absolute;
+    backface-visibility: hidden; /* Hides the back side when flipped */
+    overflow: hidden;
+  }
+
+  /* Inside each card, the actual image */
+  .carousel__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* 3D rotation animation */
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg); /* Negative for counterclockwise */
+    }
   }
 }
